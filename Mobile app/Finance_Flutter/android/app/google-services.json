@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "849519696918",
+    "project_id": "financetiaa",
+    "storage_bucket": "financetiaa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849519696918:android:a1e016fb5040a28dbfe937",
+        "android_client_info": {
+          "package_name": "com.example.auth_ref"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuV90zDRGXdAjam9wClR_cQ49CTFgePAE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
