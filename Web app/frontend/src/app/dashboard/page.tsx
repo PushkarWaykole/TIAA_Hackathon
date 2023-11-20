@@ -74,7 +74,7 @@ const Dashboard = async () => {
       </div>
 
       <div>
-        <Form1 />
+        <Form1 age={age}/>
       </div>
     </>
   );

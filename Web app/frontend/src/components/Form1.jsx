@@ -1,10 +1,10 @@
 'use client';
 import React from 'react'
 import Form from '@/components/Form'
-const Form1 = () => {
+const Form1 = ({age}) => {
   return (
     <div>
-        <Form />
+        <Form age={age}/>
     </div>
   )
 }

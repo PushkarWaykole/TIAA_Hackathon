@@ -46,5 +46,29 @@ def get_recommendation_ml():
 
         return jsonify(recommended_stocks);
 
+
+
+@app.route('/api_res',methods=['POST','GET'])
+def api_response():
+    if request.method == 'GET':
+        return 'working fine'
+    age=request.form.get('age')
+    savingsBalance=request.form.get('savingsBalance')
+    annualIncome=request.form.get('annualIncome')
+    annualExpense=request.form.get('annualExpense')
+    investmentExperience=request.form.get('investmentExperience')
+    investmentTimeHorizon=request.form.get('investmentTimeHorizon')
+    
+    from bardapi import BardCookies
+    cookie_dict = {
+        "__Secure-1PSID": "cwhkeRRWYkE0ewndThEa44PgDdPMjaTarYbn2SQcmL9HNqU_MHRQ2W9blK0G7g_GxfRZdQ.",
+        "__Secure-1PSIDTS": "sidts-CjIBNiGH7gz8TuDWVEVqyJ23JcNaqeF08uTz6auU1M3EtT84a2LcZowB8Mev5i8XbNzJmRAA",
+        "__Secure-1PSIDCC": "ACA-OxPK75R1fT54TzEEKg-WZQrEDOW4s95kGaKDF079a7E-UP5bExN5OzwGhvrod55Fwiauroc"
+    }
+
+    bard = BardCookies(cookie_dict=cookie_dict)
+    result_string = f"Savings Balance: {savingsBalance}, Annual Income: {annualIncome}, Annual Expense: {annualExpense}, Investment Experience: {investmentExperience}, Investment Time Horizon: {investmentTimeHorizon} and age is {age} ,suggest some good stock portfolio options"
+    print(bard.get_answer(result_string)["content"])
+    return jsonify(bard.get_answer(result_string)["content"])
 if __name__ == '__main__':
     app.run(debug=True)

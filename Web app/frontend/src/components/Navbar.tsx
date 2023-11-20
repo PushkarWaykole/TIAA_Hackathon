@@ -14,6 +14,11 @@ const Navbar = () => {
             <li>Home</li>
           </Link>
         </div>
+        <div>
+          <Link href="/">
+            <img src='./logo.jpg'/>
+          </Link>
+        </div>
         <div className="flex gap-10">
           
           {!session ? (
