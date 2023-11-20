@@ -6,7 +6,7 @@ const nextConfig = {
       NEXTAUTH_SECRET:"fsdyfgsdjhg",
     },
     images : { 
-      domains : ['cdn.pixabay.com'] 
+      domains : ['cdn.pixabay.com','github.com'] 
     }
   };
   

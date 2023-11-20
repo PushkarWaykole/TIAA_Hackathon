@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { signOut, useSession } from "next-auth/react";
+import Image from "next/image";
 
 const Navbar = () => {
   const { data: session }: any = useSession();
@@ -14,9 +15,9 @@ const Navbar = () => {
             <li>Home</li>
           </Link>
         </div>
-        <div>
+        <div className="h-[1rem]">
           <Link href="/">
-            <img src='./logo.jpg'/>
+            <Image src='https://github.com/PushkarWaykole/TIAA_Hackathon/blob/main/Web%20app/frontend/src/components/logo.jpg?raw=true' width={100} height={130} alt="logo" />
           </Link>
         </div>
         <div className="flex gap-10">
