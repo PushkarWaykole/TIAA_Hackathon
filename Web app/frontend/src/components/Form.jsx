@@ -14,10 +14,15 @@ const Form = ({ age }) => {
 
   };
   return (
-    <div className="flex items-center justify-center bg-[url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c21vb3RoJTIwYmFja2dyb3VuZCUyMGdyYWRpZW50c3xlbnwwfHwwfHx8MA%3D%3D')] h-screen w-full overflow-hidden rounded-none bg-transparent bg-cover bg-center gap-10">
+
+
+    <div className="flex  items-center justify-center bg-[url('https://images.unsplash.com/photo-1580519542036-c47de6196ba5?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] h-screen w-full overflow-hidden rounded-none bg-transparent bg-cover bg-center gap-10">
+
+      
+
       <form onSubmit={handleSubmit} className="max-w-md mx-auto my-8 bg-white p-6 rounded-md shadow-md text-black flex items-center justify-center flex-col">
 
-
+      <div className="text-black font-bold text-2xl bg-white rounded-lg p-2 m-2">Get AI generated portfolios</div>
         <div className="block mb-4 text-center text-center text-center">
           Savings Account Balance:
           <input

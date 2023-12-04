@@ -36,7 +36,7 @@ const ExampleButton = ({age,gender,income}) => {
       {apiData.map((bucket, index) => (
         <div key={index}>
           <h2 className="font-bold mt-3">Bucket {index + 1}:</h2>
-          <div className="bg-white p-2 rounded-lg">
+          <div className="bg-gray-300 p-2 rounded-lg">
             {bucket.map((company, companyIndex) => (
               <div key={companyIndex}>{company.replace(/'/g, '').replace(/\[|\]/g, '')}</div>
             ))}
