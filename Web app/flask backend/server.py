@@ -61,7 +61,9 @@ def api_response():
     
     from bardapi import BardCookies
     cookie_dict = {
-        
+        "__Secure-1PSID": "cwhkeRRWYkE0ewndThEa44PgDdPMjaTarYbn2SQcmL9HNqU_MHRQ2W9blK0G7g_GxfRZdQ.",
+        "__Secure-1PSIDTS": "sidts-CjIBNiGH7gz8TuDWVEVqyJ23JcNaqeF08uTz6auU1M3EtT84a2LcZowB8Mev5i8XbNzJmRAA",
+        "__Secure-1PSIDCC": "ACA-OxPK75R1fT54TzEEKg-WZQrEDOW4s95kGaKDF079a7E-UP5bExN5OzwGhvrod55Fwiauroc"
     }
 
     bard = BardCookies(cookie_dict=cookie_dict)
